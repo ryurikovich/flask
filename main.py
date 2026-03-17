@@ -9,6 +9,10 @@ def index():
     random_name = choice(['Name_A', 'Name_B', 'Name_C'])
     return render_template('index.html', title = "Про Flask", name = random_name)
 
+@app.route('/index2')
+def index2():
+    return render_template('index2.html')    
+
 @app.route('/about')
 def about():
     return render_template('about.html', title = "О сайте", nums = [i for i in range(5)])

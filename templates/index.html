@@ -7,6 +7,7 @@
         <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/style.css') }}">
     </head>
     <body>
+        {% include "_menu.html" %}
         <h1 align = "center">{{title}}</h1>
         <img src = "{{url_for('static', filename = 'img/tree.jpg' )}}" alt = "img" width = "240" height ="240">
         <p>Привет, {{name}}</p>
